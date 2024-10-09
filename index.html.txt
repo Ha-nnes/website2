@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannes Meyer-Rahlfs Portfolio</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header and Logo */
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header img {
+            width: 100px;
+        }
+
+        /* Menu */
+        .menu {
+            background-color: black;
+            padding: 10px;
+            text-align: left;
+            color: white;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px; /* Space between links */
+        }
+
+        /* Main content */
+        .content {
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .section h2 {
+            color: #333;
+        }
+
+        .intro img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #76b5c5;
+            color: black;
+            padding: 10px 20px; /* More padding for better appearance */
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s; /* Transition effect */
+        }
+
+        .button:hover {
+            background-color: #68a2b0; /* Darker color on hover */
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hannes Meyer-Rahlfs</h1>
+        <img src="https://media.gettyimages.com/id/1446056594/video/h-letter-glitch-text-animation-effect-on-old-interference-screen-4k-video.jpg?s=640x640&k=20&c=d_FU2A0d1EXeBx2fiOq58jDMIg1Mva7f0gRppTfIw3w=" alt="Logo">
+    </header>
+
+    <div class="menu">
+        <a href="#">MENU</a> <!-- Replace # with actual link -->
+        <a href="portfolio.html">PORTFOLIO</a> <!-- Link to your portfolio page -->
+        <a href="contact.html">CONTACT</a> <!-- Link to a contact page -->
+    </div>
+
+    <div class="content">
+        <!-- Introduction Section -->
+        <div class="section intro">
+            <h2>INTRODUCTION</h2>
+            <img src="https://via.placeholder.com/150" alt="Profile"> <!-- Replace with actual image link -->
+            <p>Hi, my name is Hannes Meyer-Rahlfs</p>
+            <a href="#" class="button button-yellow">SEE MY WORK</a> <!-- Replace # with actual link -->
+        </div>
+
+        <!-- Contact Information -->
+        <div class="section">
+            <h2>CONTACT INFORMATION</h2>
+            <p>Email: <a href="mailto:hmeyerrahlfs@gmail.com">hmeyerrahlfs@gmail.com</a></p>
+            <a href="mailto:hmeyerrahlfs@gmail.com" class="button">CONTACT</a>
+        </div>
+
+        <!-- Mission Statement -->
+        <div class="section">
+            <h2>MISSION STATEMENT</h2>
+            <a href="mission.html" class="button">DETAILS</a> <!-- Link to mission statement page -->
+        </div>
+
+        <!-- Vision Statement -->
+        <div class="section">
+            <h2>VISION STATEMENT</h2>
+            <a href="vision.html" class="button">DETAILS</a> <!-- Link to vision statement page -->
+        </div>
+
+        <!-- Portfolio -->
+        <div class="section">
+            <h2>PORTFOLIO</h2>
+            <a href="portfolio.html" class="button">VIEW PORTFOLIO</a> <!-- Link to portfolio -->
+        </div>
+    </div>
+
+    <footer>
+        <p>© H4nS 2024</p>
+    </footer>
+
+</body>
+</html>
