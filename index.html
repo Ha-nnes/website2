@@ -10,33 +10,44 @@
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1e1e1e; /* Dark background */
-            color: #e0e0e0; /* Light gray text */
+            background-color: #1e1e1e; 
+            color: #E1E1E1; 
         }
 
         header {
-            background: #000;
-            color: #fff;
+            background: #000000;
+            color: #E1E1E1; 
             padding: 20px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         header img {
-            width: 80px; /* Smaller logo */
-            border-radius: 50%; /* Circular logo */
+            width: 100px; 
+            border-radius: 50%;
+            margin-left: 20px; 
+        }
+
+        .header-text {
+            flex: 1; /* Take up remaining space */
+            text-align: center;
+            font-size: 24px; 
+            font-weight: bold;
         }
 
         .menu {
-            background: #424242; /* Dark gray */
+            background: #564E58; 
             padding: 15px;
-            text-align: center;
+            text-align: left; 
+            margin-left: 20px; 
         }
 
         .menu a {
-            color: #e0e0e0; /* Light gray */
+            color: #E1E1E1;
             text-decoration: none;
-            margin: 0 15px;
+            margin-right: 15px; 
             font-weight: bold;
         }
 
@@ -48,34 +59,63 @@
         }
 
         .section {
-            background: #616161; /* Medium gray */
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            max-width: 400px; /* Set a max width for sections */
-            width: 100%; /* Full width on smaller screens */
+            background: #564E58; 
+            margin-bottom: 15px;
+            padding: 10px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            max-width: 300px;
+            width: 100%; 
+        }
+
+        .intro {
+            max-width: 400px;
         }
 
         .section h2 {
-            color: #fff; /* White for headers */
-            border-bottom: 2px solid #b0bec5; /* Underline */
+            color: #E1E1E1; 
+            border-bottom: 2px solid #904E55;
             padding-bottom: 5px;
         }
 
         .button {
             display: inline-block;
-            background: #b0bec5; /* Light blue-gray */
-            color: black;
+            background: #904E55; 
+            color: white; 
             padding: 10px 20px;
             border-radius: 5px;
         }
 
         footer {
-            background: #424242; /* Dark gray */
-            color: white;
+            background: #F2EFE9;
+            color: black;
             text-align: center;
             padding: 15px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer p a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        
+        .section {
+            border-radius: 0;
+        }
+
+       
+        @media (min-width: 768px) {
+            .section {
+                max-width: 400px; 
+            }
+
+            .intro {
+                max-width: 500px; 
+            }
         }
     </style>
 </head>
@@ -83,33 +123,33 @@
 <body>
 
     <header>
-        <h1>Hannes Meyer-Rahlfs</h1>
         <img src="https://media.gettyimages.com/id/1446056594/video/h-letter-glitch-text-animation-effect-on-old-interference-screen-4k-video.jpg?s=640x640&k=20&c=d_FU2A0d1EXeBx2fiOq58jDMIg1Mva7f0gRppTfIw3w=" alt="Logo">
+        <div class="header-text">Portfolio</div>
+        <div class="menu">
+            <a href="#">MENU</a>
+        </div>
     </header>
-
-    <div class="menu">
-        <a href="#">MENU</a>
-    </div>
 
     <div class="content">
         <!-- Introduction Section -->
         <div class="section intro">
             <h2>Introduction</h2>
-            <img src="https://via.placeholder.com/150" alt="Hannes Meyer-Rahlfs Profile Picture" style="border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">
+            <img src="https://via.placeholder.com/150" alt="Hannes Meyer-Rahlfs Profile Picture" style="box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">
             <p>Hi, my name is Hannes Meyer-Rahlfs.</p>
             <a href="https://example.com" class="button">SEE MY WORK</a>
         </div>
 
         <!-- Contact Information -->
         <div class="section">
-            <h2>Contact Info</h2>
-            <p>Email: <a href="mailto:hmeyerrahlfs@gmail.com" style="color: #e0e0e0;">hmeyerrahlfs@gmail.com</a></p>
-            <a href="https://example.com" class="button">CONTACT</a>
+            <h2>Contact & Resume</h2>
+            <p>Download resume<p>
+            <p>Email: <a href="mailto:hmeyerrahlfs@gmail.com" style="color: #E1E1E1;">hmeyerrahlfs@gmail.com</a></p>
+            <a href="mailto:hmeyerrahlfs@gmail.com" class="button">CONTACT</a>
         </div>
 
         <!-- Mission Statement -->
         <div class="section">
-            <h2>What We Do</h2>
+            <h2>Skills & Specializations</h2>
             <a href="https://example.com" class="button">DETAILS</a>
         </div>
 
@@ -122,8 +162,13 @@
 
     <footer>
         <p>© Hannes Meyer-Rahlfs 2024</p>
+        <p>
+            <a href="https://www.linkedin.com/in/hannes-meyer-rahlfs-425bb728b/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/Ha-nnes" target="_blank">GitHub</a> | 
+            <a href="https://example.com/terms" target="_blank">Terms of Service</a> | 
+            <a href="mailto:hmeyerrahlfs@gmail.com">Contact</a>
+        </p>
     </footer>
 
 </body>
 </html>
-
